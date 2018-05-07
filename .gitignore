@@ -5,3 +5,4 @@ node_modules
 docs
 docs/js/shCore.js
 docs/js/shCore.js
+package-lock.json
