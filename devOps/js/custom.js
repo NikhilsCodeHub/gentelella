@@ -4257,7 +4257,9 @@ if (typeof NProgress != 'undefined') {
 				}]
 			  });
 
-			  var dataStyle = {
+			} 
+			  
+            var dataStyle = {
 				normal: {
 				  label: {
 					show: false
@@ -4282,26 +4284,23 @@ if (typeof NProgress != 'undefined') {
 				  color: 'rgba(0,0,0,0)'
 				}
 			  };
-
-			} 
-			  
 			   //echart Mini Pie
 			  
-			if ($('#echart_mini_pie').length ){ 
+			if ($('#echart_mini_pie2').length ){ 
 			  
-			  var echartMiniPie = echarts.init(document.getElementById('echart_mini_pie'), theme);
+			  var echartMiniPie = echarts.init(document.getElementById('echart_mini_pie2'), theme);
 
 			  echartMiniPie .setOption({
 				title: {
-				  text: 'Chart #2',
-				  subtext: 'From ExcelHome',
-				  sublink: 'http://e.weibo.com/1341556070/AhQXtjbqh',
+				  text: 'Drive',
+				  subtext: '',
+				  sublink: '',
 				  x: 'center',
 				  y: 'center',
 				  itemGap: 20,
 				  textStyle: {
 					color: 'rgba(30,144,255,0.8)',
-					fontFamily: '微软雅黑',
+					fontFamily: 'Arial',
 					fontSize: 35,
 					fontWeight: 'bolder'
 				  }
@@ -4312,10 +4311,10 @@ if (typeof NProgress != 'undefined') {
 				},
 				legend: {
 				  orient: 'vertical',
-				  x: 170,
-				  y: 45,
+				  x: 300,
+				  y: 20,
 				  itemGap: 12,
-				  data: ['68%Something #1', '29%Something #2', '3%Something #3'],
+				  data: ['68% C-Drive', '29% D-Drive', '3% E-Drive'],
 				},
 				toolbox: {
 				  show: true,
@@ -4350,10 +4349,10 @@ if (typeof NProgress != 'undefined') {
 				  radius: [105, 130],
 				  itemStyle: dataStyle,
 				  data: [{
-					value: 68,
-					name: '68%Something #1'
+					value: 90,
+					name: '68% C-Drive'
 				  }, {
-					value: 32,
+					value: 10,
 					name: 'invisible',
 					itemStyle: placeHolderStyle
 				  }]
@@ -4361,11 +4360,11 @@ if (typeof NProgress != 'undefined') {
 				  name: '2',
 				  type: 'pie',
 				  clockWise: false,
-				  radius: [80, 105],
+				  radius: [80, 100],
 				  itemStyle: dataStyle,
 				  data: [{
 					value: 29,
-					name: '29%Something #2'
+					name: '29% D-Drive'
 				  }, {
 					value: 71,
 					name: 'invisible',
@@ -4375,13 +4374,13 @@ if (typeof NProgress != 'undefined') {
 				  name: '3',
 				  type: 'pie',
 				  clockWise: false,
-				  radius: [25, 80],
+				  radius: [30, 70],
 				  itemStyle: dataStyle,
 				  data: [{
-					value: 3,
-					name: '3%Something #3'
+					value: 50,
+					name: '3% E-Drive'
 				  }, {
-					value: 97,
+					value: 50,
 					name: 'invisible',
 					itemStyle: placeHolderStyle
 				  }]
