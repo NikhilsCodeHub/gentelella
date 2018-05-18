@@ -4288,11 +4288,12 @@ if (typeof NProgress != 'undefined') {
 			  
 			if ($('#echart_mini_pie2').length ){ 
 			  
-			  var echartMiniPie = echarts.init(document.getElementById('echart_mini_pie2'), theme);
-
+//			  var echartMiniPie = echarts.init(document.getElementById('echart_mini_pie2'), theme);
+			  echartMiniPie = echarts.init(document.getElementById('echart_mini_pie2'), theme);
+                
 			  echartMiniPie .setOption({
 				title: {
-				  text: 'Drive',
+				  text: '',
 				  subtext: '',
 				  sublink: '',
 				  x: 'center',
@@ -4363,13 +4364,16 @@ if (typeof NProgress != 'undefined') {
 				  radius: [80, 100],
 				  itemStyle: dataStyle,
 				  data: [{
-					value: 29,
-					name: '29% D-Drive'
-				  }, {
-					value: 71,
+					value: 40,
 					name: 'invisible',
 					itemStyle: placeHolderStyle
-				  }]
+				  }, {
+					value: 30,
+					name: '30% D-Drive'
+				  }, {
+					value: 29,
+					name: '30% F-Drive'
+				  },]
 				}, {
 				  name: '3',
 				  type: 'pie',
@@ -4377,10 +4381,10 @@ if (typeof NProgress != 'undefined') {
 				  radius: [30, 70],
 				  itemStyle: dataStyle,
 				  data: [{
-					value: 50,
+					value: 40,
 					name: '3% E-Drive'
 				  }, {
-					value: 50,
+					value: 60,
 					name: 'invisible',
 					itemStyle: placeHolderStyle
 				  }]
@@ -5002,6 +5006,7 @@ if (typeof NProgress != 'undefined') {
 	   
 		}  
 	   
+var echartMiniPie;
 	   
 	$(document).ready(function() {
 				
